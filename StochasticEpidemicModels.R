@@ -5,8 +5,9 @@
 rm(list=ls())
 
 ### 1. Discrete time
-## Simulate population dynamics for 100 years (weekly) 
-## for transmission rate parameter beta=2.8, or and recovery rate sigma=1/3
+# Simulate demographic turnover for a population of 1000, with 15 births per 1,000 individuals per year and 
+# 1030 deaths per 100,000 individuals per year.  
+# Run the model weekly for 100 years.
 Tmax=100*52
 pop=1000
 births.per.biweek.per.pop = 15/(52*1000) # ~ range 11-50 per 1,000 per year
